@@ -27,6 +27,7 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+// *************1. Рішення.****************
 // const firstEl = document.createElement('li');
 // const catEl = document.createElement('img');
 // catEl.src = 
@@ -79,9 +80,7 @@ const images = [
 // zebraEl.alt = 'Zebras on Zebra';
 // zebraEl.width = 360;
 // zebraEl.height = 300;
-
-
-
+// const galleryEl = document.querySelector('.gallery');
 // firstEl.append(catEl);
 // secondEl.append(fishEl);
 // thirdEl.append(horsesEl);
@@ -89,10 +88,9 @@ const images = [
 // fifthEl.append(parrotEl);
 // sixthEl.append(zebraEl);
 
-
-
-
 // galleryEl.append(firstEl, secondEl, thirdEl, fourthEl, fifthEl, sixthEl);
+
+// *************2. Рішення.******************
 const galleryEl = document.querySelector('.gallery');
 
 
@@ -107,6 +105,4 @@ const createMarkup = ({ url, alt }) =>
 const markup = images.map(createMarkup).join('');
   
 galleryEl.insertAdjacentHTML('beforeend', markup);
-// const imageEl = document.querySelector('.image');
-// imageEl.width = 360;
-// imageEl.height = 300;
+
